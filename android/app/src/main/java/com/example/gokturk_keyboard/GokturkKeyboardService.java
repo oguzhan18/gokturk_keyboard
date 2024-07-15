@@ -50,7 +50,7 @@ public class GokturkKeyboardService extends InputMethodService {
         addLetterButtonClickListener(keyboardView, R.id.button_gokturk_letter_37, "𐰤");
         addLetterButtonClickListener(keyboardView, R.id.button_gokturk_letter_38, "𐰥");
 
-        return keyboardView;
+         return keyboardView;
     }
 
     private void addLetterButtonClickListener(LinearLayout keyboardView, int buttonId, String letter) {
