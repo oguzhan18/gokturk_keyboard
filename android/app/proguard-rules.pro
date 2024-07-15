@@ -1,0 +1,1 @@
+-keep class com.example.gokturk_keyboard.MainActivity { *; }

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/keyboard_background"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_gokturk_letter_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰀"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰁"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰂"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰃"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰄"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰅"
+            style="@style/KeyboardButton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_gokturk_letter_7"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰆"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_8"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰇"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_9"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰈"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_10"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰉"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_11"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰊"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_12"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰋"
+            style="@style/KeyboardButton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_gokturk_letter_13"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰌"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_14"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰍"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_15"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰎"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_16"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰏"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_17"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰐"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_18"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰑"
+            style="@style/KeyboardButton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_gokturk_letter_19"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰒"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_20"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰓"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_21"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰔"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_22"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰕"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_23"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰖"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_24"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰗"
+            style="@style/KeyboardButton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_gokturk_letter_25"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰘"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_26"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰙"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_27"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰚"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_28"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰛"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_29"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰜"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_30"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰝"
+            style="@style/KeyboardButton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_gokturk_letter_31"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰞"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_32"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰟"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_33"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰠"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_34"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰡"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_35"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰢"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_36"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰣"
+            style="@style/KeyboardButton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_gokturk_letter_37"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰤"
+            style="@style/KeyboardButton" />
+        <Button
+            android:id="@+id/button_gokturk_letter_38"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="𐰥"
+            style="@style/KeyboardButton" />
+    </LinearLayout>
+
+</LinearLayout>
