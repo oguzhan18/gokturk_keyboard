@@ -5,11 +5,27 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class GokturkKeyboardService extends InputMethodService {
+    private View mainKeyboardView;
+    private View numbersKeyboardView;
+    private View emojiKeyboardView;
+
     @Override
     public View onCreateInputView() {
-        LinearLayout keyboardView = (LinearLayout) getLayoutInflater().inflate(R.layout.keyboard, null);
+        mainKeyboardView = getLayoutInflater().inflate(R.layout.keyboard, null);
+        numbersKeyboardView = getLayoutInflater().inflate(R.layout.keyboard_numbers, null);
+        emojiKeyboardView = getLayoutInflater().inflate(R.layout.keyboard_emojis, null);
+
+        setupMainKeyboard(mainKeyboardView);
+        setupNumbersKeyboard(numbersKeyboardView);
+        setupEmojiKeyboard(emojiKeyboardView);
+
+        return mainKeyboardView;
+    }
+
+    private void setupMainKeyboard(View keyboardView) {
 
         addLetterButtonClickListener(keyboardView, R.id.button_gokturk_letter_1, "𐰀");
         addLetterButtonClickListener(keyboardView, R.id.button_gokturk_letter_2, "𐰁");
@@ -50,13 +66,53 @@ public class GokturkKeyboardService extends InputMethodService {
         addLetterButtonClickListener(keyboardView, R.id.button_gokturk_letter_37, "𐰤");
         addLetterButtonClickListener(keyboardView, R.id.button_gokturk_letter_38, "𐰥");
 
-         return keyboardView;
+        Button spaceButton = keyboardView.findViewById(R.id.button_space);
+        if (spaceButton != null) {
+            spaceButton.setOnClickListener(v -> getCurrentInputConnection().commitText(" ", 1));
+        }
+
+        Button deleteButton = keyboardView.findViewById(R.id.button_delete);
+        if (deleteButton != null) {
+            deleteButton.setOnClickListener(v -> getCurrentInputConnection().deleteSurroundingText(1, 0));
+        }
+
+        Button numbersButton = keyboardView.findViewById(R.id.button_numbers);
+        if (numbersButton != null) {
+            numbersButton.setOnClickListener(v -> setInputView(numbersKeyboardView));
+        }
+
+        Button emojiButton = keyboardView.findViewById(R.id.button_emoji);
+        if (emojiButton != null) {
+            emojiButton.setOnClickListener(v -> setInputView(emojiKeyboardView));
+        }
     }
 
-    private void addLetterButtonClickListener(LinearLayout keyboardView, int buttonId, String letter) {
+    private void setupNumbersKeyboard(View keyboardView) {
+        // Sayı ve özel karakter butonlarını ekleyin
+
+        Button backButton = keyboardView.findViewById(R.id.button_back);
+        if (backButton != null) {
+            backButton.setOnClickListener(v -> setInputView(mainKeyboardView));
+        }
+    }
+
+    private void setupEmojiKeyboard(View keyboardView) {
+        // Emoji butonlarını ekleyin
+
+        Button backButton = keyboardView.findViewById(R.id.button_back);
+        if (backButton != null) {
+            backButton.setOnClickListener(v -> setInputView(mainKeyboardView));
+        }
+    }
+
+    private void addLetterButtonClickListener(View keyboardView, int buttonId, String letter, String hint) {
         Button button = keyboardView.findViewById(buttonId);
         if (button != null) {
             button.setOnClickListener(v -> getCurrentInputConnection().commitText(letter, 1));
+            button.setOnLongClickListener(v -> {
+                Toast.makeText(this, hint, Toast.LENGTH_SHORT).show();
+                return true;
+            });
         }
     }
 
