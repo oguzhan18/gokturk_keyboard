@@ -2,5 +2,7 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="keyboard_background">#FFDDDDDD</color>
+    <color name="keyboard_background">#F5F5F5</color>
+    <color name="keyboard_button_text">#000000</color>
+    <color name="keyboard_button_border">#CCCCCC</color>
 </resources>
